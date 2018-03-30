@@ -11,6 +11,9 @@ app.get('/', function (req, res) {
 app.get('first-page',function(req, res){
    res.sendFile(path.join(__dirname, 'ui', 'first-page.html')); 
 });
+app.get('second-page',function(req, res){
+   res.send('khul ja sim sim'); 
+});
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });
